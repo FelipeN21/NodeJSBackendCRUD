@@ -1,0 +1,23 @@
+{
+  "name": "nodejsbackendcrud",
+  "version": "1.0.0",
+  "description": "Projeto de Backend em Node Js com utilização do Express e MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeN21/NodeJSBackendCRUD.git"
+  },
+  "author": "FelipeN21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeN21/NodeJSBackendCRUD/issues"
+  },
+  "homepage": "https://github.com/FelipeN21/NodeJSBackendCRUD#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
