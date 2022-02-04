@@ -13,7 +13,7 @@ const sensoresRoute = require('./rotas/sensores');
 app.use('/sensores', sensoresRoute)
 
 //Middlewares
-app.use(cors());
+app.use(cors()); //Utilizacao do cors para permitir uma checagem e utilizacao de requisicoes de forma mais facil
 
 
 
