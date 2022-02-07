@@ -19,7 +19,7 @@ app.use(cors()); //Utilizacao do cors para permitir uma checagem e utilizacao de
 
 
 //Routing
-//Using just to set a baseic response for home page
+//Using just to set a basic response for home page
 app.get('/', (req,res) => {
 res.send('Home Page Landing')
 });

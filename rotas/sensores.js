@@ -11,7 +11,7 @@ router.get('/', (req,res) => {
 });
 
 //Puxa todos os Sensores possiveis
-/* Caso desejado Testar via codepen.IO favor utilizar o seguinte código
+/* CASO DESEJADO TESTAR VIA CODEPEN.IO FAVOR UTILIZAR O SEGUINTE CODIGO
 fetch('http://localhost:3000/sensores/visualizar').then(resultado =>{
     return result.json();
 }).then(data => {
@@ -19,6 +19,8 @@ fetch('http://localhost:3000/sensores/visualizar').then(resultado =>{
 })
 */ //Dessa maneira será realizada a listagem dos objetos "Sensor existente" - Atualmente (Ambiente pré-teste de voces) existem 2 sensores cadastrados - Para obter seu ID pode ser utilizado essa funcao ou pega-los diretamente aqui ->
 // ID1 -> 61fd9dff540bc74a5ba80150 ID2 -> 61fd9ee22df3d6243be9d86c // Infelizmente nao posso dar acesso ao mongoDB Cloud pois se trata da minha conta pessoal portanto todos os testes devem ser realizado pela aplicação
+
+
 router.get('/visualizar', async (req,res) => {
     
     try{
@@ -52,10 +54,10 @@ res.json(SensorSalvo);
 });
 
 
-//Todas as rotas direcionadas a '/:postId' sao dinamicas e respondem a certos valores e de acordo com o metodo utilizado get/delete/patch 
+//Todas as rotas direcionadas a '/:postId' sao dinamicas e respondem a certos valores  de acordo com o metodo utilizado get/delete/patch 
 
 //buscando sensor especifico via seu id 
-router.get('/:postID', async (req,res) => {
+router.get('/:postId', async (req,res) => {
     const sensorRR = Ssensor.findById(req.params.postID);
     try{
     res.json(post);
